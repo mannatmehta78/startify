@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brew & Bite Café</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<script>
+    const titles = document.querySelectorAll(".menu-title");
+
+    titles.forEach(title => {
+        title.addEventListener("click", () => {
+            const content = title.nextElementSibling;
+
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                content.style.padding = "0 20px";
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.style.padding = "10px 20px";
+            }
+        });
+    });
+</script>
+<body>
+
+<header class="hero">
+    <nav>
+        <h1>Brew & Bite</h1>
+        <a href="#booking" class="btn">Book a Table</a>
+    </nav>
+
+    <div class="hero-text">
+        <h2>Fresh Coffee. Warm Moments.</h2>
+        <p>A cozy café for coffee lovers and food enthusiasts.</p>
+    </div>
+</header>
+
+<section class="about">
+    <h2>About Us</h2>
+    <p>
+        Brew & Bite is a neighborhood café offering handcrafted coffee,
+        delicious snacks, and a welcoming space to relax.
+    </p>
+</section>
+
+<section class="menu">
+    <h2>Our Menu</h2>
+
+    <div class="menu-grid">
+
+        <div class="menu-box">
+            <h3>☕ Coffee</h3>
+            <p><span>Cappuccino</span> ₹180</p>
+            <p><span>Latte</span> ₹200</p>
+            <p><span>Americano</span> ₹170</p>
+        </div>
+
+        <div class="menu-box">
+            <h3>🥤 Beverages</h3>
+            <p><span>Cold Brew</span> ₹220</p>
+            <p><span>Iced Tea</span> ₹190</p>
+            <p><span>Fresh Lime Soda</span> ₹160</p>
+        </div>
+
+        <div class="menu-box">
+            <h3>🥐 Snacks</h3>
+            <p><span>Grilled Sandwich</span> ₹250</p>
+            <p><span>Cheese Croissant</span> ₹180</p>
+            <p><span>French Fries</span> ₹140</p>
+        </div>
+
+        <div class="menu-box">
+            <h3>🍰 Desserts</h3>
+            <p><span>Chocolate Brownie</span> ₹220</p>
+            <p><span>Blueberry Cheesecake</span> ₹280</p>
+            <p><span>Tiramisu</span> ₹300</p>
+        </div>
+
+    </div>
+</section>
+<section class="gallery">
+    <h2>Gallery</h2>
+    <p class="gallery-text">A glimpse into our warm and welcoming café</p>
+
+    <div class="gallery-grid">
+        <img src="images/gallery-1.jpg" alt="Cafe Interior">
+        <img src="images/gallery-2.jpg" alt="People enjoying coffee">
+        <img src="images/gallery-3.jpg" alt="Coffee cups">
+        <img src="images/gallery-4.jpg" alt="Dessert">
+        <img src="images/gallery-5.jpg" alt="Barista at work">
+        <img src="images/gallery-6.jpg" alt="Working in cafe">
+    </div>
+</section>
+
+
+<section class="booking" id="booking">
+    <h2>Book a Table</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="date" required>
+        <input type="time" required>
+        <input type="number" placeholder="Number of Guests" required>
+        <button type="submit">Request Booking</button>
+    </form>
+
+    <p class="note">*Booking requests will be confirmed via call or WhatsApp</p>
+</section>
+
+<footer>
+    <p>Concept Project | Designed by Startify</p>
+</footer>
+
+</body>
+</html>

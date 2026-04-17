@@ -1,0 +1,276 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF6E5;
+    color: #2E2E2E;
+    line-height: 1.6;
+}
+
+/* COMMON */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+section {
+    padding: 80px 20px;
+}
+
+.btn {
+    background-color: #6F4E37;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5a3f2c;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.35)
+    ),
+    url("images/hero.jpg") center/cover no-repeat;
+    min-height: 100vh;
+    color: #ffffff;
+    padding: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin-top: 140px;
+}
+
+.hero-text h2 {
+    font-size: 46px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    margin-top: 18px;
+    font-size: 16px;
+    opacity: 0.95;
+}
+
+/* ABOUT */
+.about {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* MENU */
+.menu {
+    background-color: #EBDCCB;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.menu-box {
+    background: white;
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+    transition: all 0.35s ease;
+    min-height: 260px; /* makes box feel large */
+    text-align: left;
+}
+
+.menu-box:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.menu-box h3 {
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: #6F4E37;
+}
+
+.menu-box p {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 14px;
+    border-bottom: 1px dashed #eee;
+}
+
+.menu-box span {
+    color: #333;
+}
+/* BOOKING */
+.booking {
+    text-align: center;
+}
+
+.booking h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+form button {
+    width: 100%;
+    background-color: #6F4E37;
+    color: #ffffff;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+form button:hover {
+    background-color: #5a3f2c;
+}
+
+.note {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #777;
+}
+
+/* FOOTER */
+footer {
+    background-color: #6F4E37;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .hero-text {
+        margin-top: 100px;
+    }
+
+    .hero-text h2 {
+        font-size: 34px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+/* GALLERY */
+.gallery {
+    background-color: #FFF6E5;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.gallery-text {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+.hero {
+    min-height: 100vh;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("images/hero.jpg") center/cover no-repeat;
+    color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+nav h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    animation: floatText 6s ease-in-out infinite alternate;
+}
+
+@keyframes floatText {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(40px);
+    }
+}

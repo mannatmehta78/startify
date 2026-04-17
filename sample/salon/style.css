@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #FFF8F3;
+    color: #2E2E2E;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+                url("images/hero.jpg") center/cover no-repeat;
+    color: white;
+    padding: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    background: #C8A96A;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.hero-text {
+    margin-top: 160px;
+}
+
+.hero-text h2 {
+    font-size: 46px;
+}
+
+/* SERVICES */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto 0;
+}
+
+.service-card {
+    background: white;
+    padding: 28px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+/* GALLERY */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto 0;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+/* BOOKING */
+form {
+    max-width: 420px;
+    margin: 30px auto 0;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    width: 100%;
+    background: #C8A96A;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+}
+
+/* FOOTER */
+footer {
+    background: #2E2E2E;
+    color: white;
+    padding: 18px;
+}
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+/* CODE BACKGROUND */
+.code-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.08; /* translucent effect */
+    z-index: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    pointer-events: none;
+}
+
+.code-bg pre {
+    font-family: monospace;
+    font-size: 14px;
+    color: #ffffff;
+    white-space: pre-wrap;
+    line-height: 1.6;
+}
+.hero-content, nav {
+    position: relative;
+    z-index: 2;
+}
